@@ -57,7 +57,8 @@ interface Types {
 export const types: Types;
 
 // Reducers
-export type reducer = (defaultNotification?: Notification) => (state: Notification[], notification: {type: ActionTypes; payload: any}) => Notification[];
+type Reducer = (defaultNotification?: Notification) => (state: Notification[], notification: {type: ActionTypes; payload: any}) => Notification[];
+export const reducer: Reducer;
 
 // Constants
 type DEFAULT_STATUS = string;
