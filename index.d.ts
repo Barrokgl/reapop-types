@@ -12,7 +12,7 @@ import {Dispatch} from 'redux';
  * We use a thunk here to create an ADD_NOTIFICATION action
  * and only return the notification object.
  */
-export function addNotification(notification: Notification): (dispatch) => Notification;
+export function addNotification(notification: Notification): (dispatch: Dispatch<any>) => Notification;
 
 /**
  * Update a notification (thunk action creator)
@@ -20,7 +20,7 @@ export function addNotification(notification: Notification): (dispatch) => Notif
  * We use a thunk here to create an UPDATE_NOTIFICATION action
  * and only return the notification object.
  */
-export function updateNotification(notification: Notification): (dispatch) => Notification;
+export function updateNotification(notification: Notification): (dispatch: Dispatch<any>) => Notification;
 
 /**
  * Remove a notification (action creator)
